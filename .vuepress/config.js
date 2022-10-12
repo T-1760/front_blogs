@@ -1,67 +1,20 @@
+const sidebar = require("./sidebar.js")
+const nav = require("./nav.js")
+const friendLink = require("./friendLink.js")
+
 module.exports = {
   "title": "front_blogs",
   "description": "this is front blogs",
   // "base": "/",//注 本地时为 / 根路径
   "base": "/front_blogs/",//注 构建线上时，与GitHubPages远程仓库名相同
   "head": [
-    [
-      "link",
-      {
-        "rel": "icon",
-        "href": "/favicon.ico"
-      }
-    ],
-    [
-      "meta",
-      {
-        "name": "viewport",
-        "content": "width=device-width,initial-scale=1,user-scalable=no"
-      }
-    ]
+    [ "link", { "rel": "icon", "href": "/favicon.ico" }],
+    [ "meta", {  "name": "viewport",  "content": "width=device-width,initial-scale=1,user-scalable=no"}]
   ],
   "theme": "reco",
   "themeConfig": {
-    "nav": [
-      {
-        "text": "Home",
-        "link": "/",
-        "icon": "reco-home"
-      },
-      {
-        "text": "TimeLine",
-        "link": "/timeline/",
-        "icon": "reco-date"
-      },
-      {
-        "text": "Docs",
-        "icon": "reco-message",
-        "items": [
-          {
-            "text": "vuepress-reco",
-            "link": "/docs/theme-reco/"
-          }
-        ]
-      },
-      {
-        "text": "Contact",
-        "icon": "reco-message",
-        "items": [
-          {
-            "text": "GitHub",
-            "link": "https://github.com/recoluan",
-            "icon": "reco-github"
-          }
-        ]
-      }
-    ],
-    "sidebar": {
-      "/docs/theme-reco/": [
-        "",
-        "theme",
-        "plugin",
-        "api"
-      ]
-    },
+    "nav": nav,
+    "sidebar": sidebar,
     "type": "blog",
     "blogConfig": {
       "category": {
@@ -71,30 +24,18 @@ module.exports = {
       "tag": {
         "location": 3,
         "text": "Tag"
-      }
-    },
-    "friendLink": [
-      {
-        "title": "午后南杂",
-        "desc": "Enjoy when you can, and endure when you must.",
-        "email": "1156743527@qq.com",
-        "link": "https://www.recoluan.com"
       },
-      {
-        "title": "vuepress-theme-reco",
-        "desc": "A simple and beautiful vuepress Blog & Doc theme.",
-        "avatar": "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        "link": "https://vuepress-theme-reco.recoluan.com"
-      }
-    ],
-    "logo": "/logo.png",
+      subSidebar: 'auto'// 开启目录结构
+    },
+    "friendLink": friendLink,
+    "logo": "/favicon.ico",
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
     "author": "Tang",
-    "authorAvatar": "/avatar.png",
-    "record": "xxxx",
-    "startYear": "2017"
+    "authorAvatar": "/avatar.jpg",
+    "record": "备案信息",
+    "startYear": "2022"
   },
   "markdown": {
     "lineNumbers": true

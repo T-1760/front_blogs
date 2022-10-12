@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
+heroText: Tang-Front-Blogs
+tagline: What a impressive, this is my front blogs!
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
@@ -25,3 +25,6 @@ features:
 - title: Tomorrow
   details: 希望更多的爱好者能够参与进来，帮助这个主题更好的成长
 ---
+### 技术支持
+  > - [vuePress](https://vuepress.vuejs.org/zh/)
+  > - [vuepress-theme-reco](https://vuepress-theme-reco.recoluan.com/)
